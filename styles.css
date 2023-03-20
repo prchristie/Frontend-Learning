@@ -1,0 +1,15 @@
+body {
+    background-color: green;
+    color: white;
+}
+
+.duck {
+    text-align: center;
+    width: auto
+}
+
+.duck__img {
+    border: 45px solid black;
+    width: auto;
+    height: max-content
+}
