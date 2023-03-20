@@ -1,0 +1,30 @@
+article {
+    box-sizing: border-box
+}
+
+.info-box {
+    border: 2px solid blue;
+    background-color: lightblue;
+    color: darkblue;
+    display: flex;
+}
+
+.big-text {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.border-5 {
+    border: 5px solid black;
+    width: min-content;
+    padding: 2rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    height: 1em;
+}
