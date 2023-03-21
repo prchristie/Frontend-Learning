@@ -10,22 +10,77 @@
     />
   </head>
   <body>
-    <article>
-      <h1>Extrinsic sizing vs intrinsic sizing</h1>
-      <div class="info-box">
-        <span class="material-symbols-outlined">info</span>
-        <p>
-          Notice that when the box is using extrinsic sizing, there's a limit of
-          how much content you can add before it overflows out of the box's
-          bounds. This makes the word, “awesome”, overflow.
-        </p>
-      </div>
-      <label class="switch">
-        Turn on intrinsic sizing
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <p class="big-text border-5">CSS IS AWESOME</p>
-    </article>
+    <h1>The Box Model</h1>
+    <section>
+      <article>
+        <h2>Extrinsic sizing vs intrinsic sizing</h2>
+        <div class="info-box">
+          <span class="material-symbols-outlined">info</span>
+          <div>
+            Notice that when the box is using extrinsic sizing, there's a limit
+            of how much content you can add before it overflows out of the box's
+            bounds. This makes the word, “awesome”, overflow.
+          </div>
+        </div>
+        <label class="switch">
+          Turn on intrinsic sizing
+          <input
+            class="intrinsic-switch"
+            id="intrinsic-switch"
+            type="checkbox"
+          />
+          <span class="slider round"></span>
+        </label>
+        <p class="big-text border-5" id="awesome">CSS IS AWESOME</p>
+      </article>
+      <article>
+        <h2>Outline effect on the box mode</h2>
+        <div class="info-box">
+          <span class="material-symbols-outlined">info</span>
+          <div>
+            Even if we have an outline of 50px like this example, it has no
+            effect on the size of the box.
+          </div>
+        </div>
+        <div class="outline-blue-thick">
+          I am the same size regardless of outline width
+        </div>
+      </article>
+      <article>
+        <div class="info-box">
+          <span class="material-symbols-outlined">info</span>
+          <div>
+            Both of these rows of images have the same attributes, except one
+            uses a box-sizing of content-box and the other uses border-box
+          </div>
+        </div>
+        <h2>Border Boxing</h2>
+        <div class="picture-wall">
+          <div class="picture-frame">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+          <div class="picture-frame">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+          <div class="picture-frame">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+        </div>
+
+        <h2>Content Boxing</h2>
+        <div class="picture-wall">
+          <div class="picture-frame content-box">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+          <div class="picture-frame content-box">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+          <div class="picture-frame content-box">
+            <img src="./rat.png" alt="An image in a picture frame" />
+          </div>
+        </div>
+      </article>
+    </section>
   </body>
+  <script src="script.js"></script>
 </html>
