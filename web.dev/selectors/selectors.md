@@ -67,4 +67,4 @@
 * Doesn't respond to state,
   * Instead acts as if adding a new element
   * Uses a double `:` - `::`
-* `::before` and `::after` are pseudo elements
+* `::before` and `::after` are pseudo **elements**

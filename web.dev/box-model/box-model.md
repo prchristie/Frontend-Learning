@@ -1,4 +1,4 @@
-# Box model
+# The Box Model
 * Everything displayed by CSS is a box
 * Things that appear as a circle are really a box with some attributes
 
@@ -35,3 +35,24 @@
   * Default = `box-sizing: content-box`
     * Means size setting attributes EG `width`/`height` apply to the content box
     * Means that adding `padding`, `border`, `margin`, etc will add to content box size
+
+## Block and inline boxes
+* Boxes have an inner and outer display type
+  * The display type affects how the box interacts with the page
+  * `block` and `inline`  are types of display
+
+### Outer display type
+* If box has display type = `block`
+  * Box breaks onto new line if cant fit
+  * Width and height are respected??
+  * Padding/margin/border causes other boxes to move away
+  * The box will fill its container width
+* If has display type=`inline`
+  * Box wont break onto new line
+  * Width and height doesnt apply
+  * Vertical padding/margin/border won't cause other inline boxes to move
+  * Horizontal will apply
+
+### inner display type
+* The type of things that display affects inside the container
+  * Ex. `display='flex'` causes direct children to become flex items
