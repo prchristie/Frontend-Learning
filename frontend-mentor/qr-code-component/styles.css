@@ -1,0 +1,62 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+
+  --ff-regular: 'Outfit', sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --border-radius: 20px;
+}
+
+body {
+  background-color: var(--clr-light-gray);
+  display: grid;
+  place-items: center;
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  padding: 1.75rem;
+}
+
+p {
+  font-size: 15px;
+}
+
+.qr-code-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  max-width: 319px;
+  background-color: var(--clr-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.qr-code-card__qr-code-img {
+  border-radius: 10px;
+}
+
+.qr-code-card__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+.qr-code-card__heading {
+  font-size: 1.35rem;
+  color: var(--clr-dark-blue);
+  line-height: 1.7rem;
+  font-weight: var(--fw-bold);
+}
+
+.qr-code-card__description {
+  color: var(--clr-grayish-blue);
+  line-height: 1.2rem;
+}
