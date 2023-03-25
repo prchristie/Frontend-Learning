@@ -11,13 +11,19 @@
   --border-radius: 20px;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+main {
   background-color: var(--clr-light-gray);
   display: grid;
   place-items: center;
   font-family: var(--ff-regular);
   font-weight: var(--fw-regular);
   padding: 1.75rem;
+  height: 100%;
 }
 
 p {
