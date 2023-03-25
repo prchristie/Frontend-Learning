@@ -27,7 +27,7 @@ p {
 .qr-code-card {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
   justify-content: center;
   max-width: 319px;
   background-color: var(--clr-white);
