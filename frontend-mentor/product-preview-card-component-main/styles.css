@@ -49,8 +49,8 @@ main {
 .product-card__content {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 1.3rem;
+  padding: 1.5rem;
+  gap: 1rem;
   max-width: 50%;
 }
 
