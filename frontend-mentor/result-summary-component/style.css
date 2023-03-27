@@ -21,13 +21,12 @@
   --fw-bolder: 800;
 
   --overview-br: 30px;
+
+  --fs-heading-sm: 18px;
+  --fs-heading-lg: 24px;
 }
 
-p {
-  font-size: 18px;
-}
-
-body {
+main {
   font-family: var(--ff-default);
   font-weight: var(--fw-standard);
 }
@@ -80,11 +79,16 @@ body {
   font-weight: var(--fw-bolder);
 }
 
+.summary-item-font-size {
+  font-size: var(--fs-heading-sm);
+}
+
 /* SPECIFIC */
 .result-summary {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-white);
+  min-width: 372px;
 }
 
 .result-summary__overview {
@@ -97,7 +101,7 @@ body {
 
 .result-summary__result-text {
   color: var(--clr-light-lavender);
-  font-size: 18px;
+  font-size: var(--fs-heading-sm);
   margin-bottom: 0.3rem;
 }
 
@@ -133,7 +137,6 @@ body {
 
 .result-summary__score-content {
   color: var(--clr-light-lavender);
-  font-size: 15px;
   width: 68%;
   text-align: center;
 }
@@ -143,6 +146,7 @@ body {
   padding: 2rem;
   padding-top: 1.5rem;
   gap: 1.4rem;
+  width: 100%;
 }
 
 .result-summary__heading {
@@ -162,10 +166,6 @@ body {
 
 .summary-item-title {
   gap: 1rem;
-}
-
-.result-summary-item-header {
-  font-size: 16px;
 }
 
 .summary-title-red {
@@ -199,4 +199,77 @@ body {
   font-size: 18px;
   border-radius: 30px;
   border: 0;
+}
+
+.result-summary__continue:hover {
+  background-image: linear-gradient(var(--gradient1-start), var(--gradient1-end));
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .result-summary {
+    flex-direction: row;
+    max-width: 800px;
+    box-shadow: 20px 20px 20px 15px rgba(0, 0, 0, 0.05);
+    border-radius: var(--overview-br);
+    overflow: hidden;
+  }
+
+  .result-summary__overview {
+    padding-top: 0px;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    width: 50%;
+    min-width: 50%;
+    border-radius: var(--overview-br)
+  }
+
+  .result-summary__heading {
+    font-size: var(--fs-heading-lg);
+    line-height: 24px;
+  }
+
+  .result-summary__result-text {
+    font-size: var(--fs-heading-lg);
+  }
+
+  .result-summary__summary {
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+
+  .result-summary__continue {
+    margin-top: 0.5rem;
+  }
+
+  .summary-item {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .result-summary__score {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6rem;
+  }
+
+  .result-summary__score-noun {
+    font-size: 32px;
+  }
+
+  .result-summary__score-content {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+
+  .result-summary__score-description {
+    gap: 1rem;
+  }
 }
