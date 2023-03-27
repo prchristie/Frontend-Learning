@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="result-summary">
+        <div class="flex-column flex-centered result-summary__overview">
+          <h1 class="result-summary__result-text">Your Result</h1>
+          <div class="flex-column flex-centered result-summary__score">
+            <div class="result-summary__user-score">76</div>
+            <div class="result-summary__overall-score grayed-text">of 100</div>
+          </div>
+          <div
+            class="flex-column flex-centered result-summary__score-description"
+          >
+            <h2 class="result-summary__score-noun">Great</h2>
+            <p class="result-summary__score-content">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="flex-column result-summary__summary">
+          <h2 class="result-summary__heading">Summary</h2>
+          <div class="result-summary__section-results">
+            <div class="flex flex-split summary-item bg-red">
+              <div class="flex summary-item-title">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Reaction icon"
+                />
+                <h2 class="result-summary-item-header summary-title-red">
+                  Reaction
+                </h2>
+              </div>
+              <div class="result-summary-result">
+                <span class="score">80</span>
+                <span class="dark-grayed-text">/ 100</span>
+              </div>
+            </div>
+            <div class="flex flex-split summary-item bg-yellow">
+              <div class="flex summary-item-title">
+                <img src="./assets/images/icon-memory.svg" alt="Memory icon" />
+                <h2 class="result-summary-item-header summary-title-yellow">
+                  Memory
+                </h2>
+              </div>
+              <div class="result-summary-result">
+                <span class="score">92</span
+                ><span class="dark-grayed-text"> / 100</span>
+              </div>
+            </div>
+            <div class="flex flex-split summary-item bg-green">
+              <div class="flex summary-item-title">
+                <img src="./assets/images/icon-verbal.svg" alt="Verbal icon" />
+                <h2 class="result-summary-item-header summary-title-green">
+                  Verbal
+                </h2>
+              </div>
+              <div class="result-summary-result">
+                <span class="score">61</span
+                ><span class="dark-grayed-text"> / 100</span>
+              </div>
+            </div>
+            <div class="flex flex-split summary-item bg-blue">
+              <div class="flex summary-item-title">
+                <img src="./assets/images/icon-visual.svg" alt="Visual icon" />
+                <h2 class="result-summary-item-header summary-title-blue">
+                  Visual
+                </h2>
+              </div>
+              <div class="result-summary-result">
+                <span class="score">72</span
+                ><span class="dark-grayed-text"> / 100</span>
+              </div>
+            </div>
+          </div>
+          <button class="result-summary__continue">Continue</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
