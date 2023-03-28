@@ -1,0 +1,109 @@
+:root {
+  --clr-primary-bright-orange: hsl(31, 77%, 52%);
+  --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+  --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+  /* (paragraphs) */
+  --clr-secondary-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --clr-secondary-very-light-gray: hsl(0, 0%, 95%);
+
+  --ff-standard: 'Lexend Deca', sans-serif;
+  --ff-bold: 'Big Shoulders Display', cursive;
+}
+
+main {
+  background-color: var(--clr-secondary-very-light-gray);
+  padding: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* GENERIC */
+.car-preview-text {
+  color: var(--clr-secondary-transparent-white);
+  font-family: var(--ff-standard);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.car-preview-header {
+  color: var(--clr-secondary-very-light-gray);
+  font-family: var(--ff-bold);
+  text-transform: uppercase;
+  font-size: 40px;
+  /* line-height: 95%; */
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column
+}
+
+.card {
+  gap: 1.8rem;
+  padding: 2.5rem;
+  background: gray;
+}
+
+.icon {
+  width: 60px;
+}
+
+.learn-more-btn {
+  border: 0;
+  background-color: var(--clr-secondary-very-light-gray);
+  mix-blend-mode: screen;
+  max-width: 60%;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  font-family: var(--ff-standard);
+  font-weight: 600;
+}
+
+/* SPECIFIC */
+.car-preview {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.sedan-card {
+  background-color: var(--clr-primary-bright-orange)
+}
+
+.suv-card {
+  background-color: var(--clr-primary-dark-cyan)
+}
+
+.luxury-card {
+  background-color: var(--clr-primary-very-dark-cyan)
+}
+
+.learn-more-btn:hover {
+  color: var(--clr-secondary-very-light-gray);
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 970px) {
+  .car-preview {
+    flex-direction: row;
+    max-width: 920px;
+    max-height: 500px;
+    height: 100%;
+  }
+
+  main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .learn-more-btn {
+    margin-top: auto;
+    max-width: 80%;
+  }
+
+}
