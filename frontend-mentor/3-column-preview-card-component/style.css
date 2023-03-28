@@ -11,13 +11,17 @@
   --ff-bold: 'Big Shoulders Display', cursive;
 }
 
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
+
 main {
   background-color: var(--clr-secondary-very-light-gray);
   padding: 1.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  height: 100vh;
-  width: 100vw;
 }
 
 /* GENERIC */
@@ -84,7 +88,9 @@ main {
 .learn-more-btn:hover {
   color: var(--clr-secondary-very-light-gray);
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  outline: 2px solid white;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 970px) {

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: green;
     color: white;
@@ -11,5 +15,6 @@ body {
 .duck__img {
     border: 45px solid black;
     width: auto;
+    max-width: 100%;
     height: max-content
 }
