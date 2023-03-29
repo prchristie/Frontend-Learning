@@ -31,6 +31,11 @@ main {
   font-weight: var(--fw-standard);
 }
 
+html,
+body {
+  overflow-x: auto;
+}
+
 /* GENERIC */
 
 /*** OVERVIEW ***/
@@ -88,7 +93,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-white);
-  min-width: 372px;
+  min-width: 280px;
 }
 
 .result-summary__overview {
