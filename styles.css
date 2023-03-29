@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 
+*:not(body) {
+    opacity: 0.9;
+}
+
 body {
-    background-color: green;
+    background-image: url('https://cdn.dribbble.com/users/58639/screenshots/3788063/936.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: white;
+}
+
+h1 {
+    color: black;
 }
 
 .duck {
@@ -13,8 +23,43 @@ body {
 }
 
 .duck__img {
-    border: 45px solid black;
+    border: 45px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
     width: auto;
     max-width: 100%;
     height: max-content
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none
+}
+
+a:hover {
+    background-color: gray;
+}
+
+header {
+    display: flex;
+    padding: 5px;
+}
+
+.roadmap {
+    background: gray;
+}
+
+p {
+    color: brown;
+    font-size: 10rem;
+    background-image: url('https://i.imgur.com/JFQdUf0.png');
+    background-size: 100% 100%;
 }
