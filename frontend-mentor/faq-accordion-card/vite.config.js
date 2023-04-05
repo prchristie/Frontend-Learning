@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Frontend-Learning/faq-accordion-card",
+  base: "/Frontend-Learning/frontend-mentor/faq-accordion-card",
 });

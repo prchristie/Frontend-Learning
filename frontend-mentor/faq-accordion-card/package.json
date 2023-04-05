@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prchristie.github.io/Frontend-Learning//faq-accordion-card",
+  "homepage": "https://prchristie.github.io/Frontend-Learning/frontend-mentor/faq-accordion-card",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

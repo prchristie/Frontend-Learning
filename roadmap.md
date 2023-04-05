@@ -2,14 +2,12 @@ Probably just gonna use frontendmentor.io to get projects for all of these. Rely
 
 - [ ] CSS & HTML
   - [x] Cascading
-  - [x] Specificity
+  - [x] **Specificity**
   - [x] Selectors
   - [x] The box model
-  - [ ] Inheritance
+  - [x] Inheritance
   - [ ] Flexbox - IN PROGRESS
   - [ ] Grid - IN PROGRESS
-  - [ ] Position - relative vs absolute
-  - [ ] Responsive design
 - [ ] Plain ol javascript
 - [ ] React/plain CSS practice
 - [ ] React + Tailwind
