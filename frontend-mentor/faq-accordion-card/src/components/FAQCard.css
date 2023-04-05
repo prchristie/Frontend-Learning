@@ -16,12 +16,8 @@
   height: min-content;
 }
 
-.container {
-  width: 100%;
-}
-
 .faq-card__content {
-  width: 100%;
+  width: 50%;
 }
 
 .faq-card__image {
@@ -79,9 +75,7 @@
 
   .desktop-images {
     overflow: visible;
-    width: 100%;
     position: relative;
-    height: 100%;
     overflow: hidden;
 
   }
