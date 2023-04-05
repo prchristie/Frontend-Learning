@@ -1,7 +1,7 @@
 import Accordion from "./Accordion";
 import "./FAQCard.css";
 
-const FAQCard = ({ headerImageMobile, headerImageDesktop, accordionData }) => {
+const FAQCard = ({ accordionData }) => {
   return (
     <div className="container">
       <article className="faq-card">
@@ -10,9 +10,14 @@ const FAQCard = ({ headerImageMobile, headerImageDesktop, accordionData }) => {
           src="/images/illustration-woman-online-mobile.svg"
           alt="Icon"
         />
+        <img
+          src="/images/illustration-box-desktop.svg"
+          alt=""
+          className="faq-card__image-extra desktop"
+        />
         <div className="desktop-images">
           <img
-            className="faq-card__image desktop"
+            className="faq-card__image desktop desktop-image"
             src="/images/illustration-woman-online-desktop.svg"
             alt="Icon"
           />
@@ -34,11 +39,6 @@ const FAQCard = ({ headerImageMobile, headerImageDesktop, accordionData }) => {
           </div>
         </div>
       </article>
-      <img
-        src="/images/illustration-box-desktop.svg"
-        alt=""
-        className="faq-card__image-extra desktop"
-      />
     </div>
   );
 };

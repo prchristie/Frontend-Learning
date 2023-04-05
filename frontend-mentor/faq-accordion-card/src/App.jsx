@@ -5,11 +5,7 @@ import "./index.css";
 const App = () => {
   return (
     <main>
-      <FAQCard
-        headerImageMobile="/images/illustration-woman-online-mobile.svg"
-        headerImageDesktop="/images/illustration-woman-online-desktop.svg"
-        accordionData={accordionData}
-      />
+      <FAQCard accordionData={accordionData} />
     </main>
   );
 };

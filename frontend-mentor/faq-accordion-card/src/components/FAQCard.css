@@ -52,8 +52,9 @@
   .faq-card {
     flex-direction: row;
     padding-top: 3rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 900px;
+    padding-left: 0;
   }
 
   .faq-card__image {
@@ -81,7 +82,13 @@
     width: 100%;
     position: relative;
     height: 100%;
-    transform: translateX(-20%);
+    overflow: hidden;
+
+  }
+
+  .desktop-image {
+    transform: translateX(-10%);
+    width: 80%;
   }
 
   .container {
