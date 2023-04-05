@@ -1,0 +1,61 @@
+@import './vars.css';
+
+html,
+body,
+#root {
+  height: 100% !important;
+  overflow: auto;
+}
+
+main {
+  min-height: 100%;
+  padding: 1.5rem;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+#root {
+  background-image: linear-gradient(var(--clr-bg-gradient-start), var(--clr-bg-gradient-end) 140%);
+  font-family: var(--ff-standard);
+  font-weight: var(--fw-standard);
+}
+
+.vert-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .mobile {
+    display: none;
+  }
+
+  main {
+    padding: 3rem;
+  }
+
+  #root {
+    background-image: linear-gradient(var(--clr-bg-gradient-start), var(--clr-bg-gradient-end));
+  }
+}

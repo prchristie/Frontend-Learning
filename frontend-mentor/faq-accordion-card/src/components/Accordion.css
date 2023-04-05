@@ -1,0 +1,48 @@
+@import "../vars.css";
+
+
+.accordion-btn {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  gap: 0.5rem;
+  border: none;
+  background: none;
+  align-items: center;
+  color: var(--clr-txt-very-dark-grayish-blue);
+  padding: 0.6rem;
+}
+
+.accordion {
+  border-bottom: 1px solid var(--clr-dividers);
+}
+
+.accordion-btn:hover {
+  color: var(--clr-pry-soft-red);
+  cursor: pointer;
+}
+
+.accordion-title {
+  font-weight: var(--fw-standard);
+  font-size: 0.84rem;
+  text-align: left;
+}
+
+.accordion-content {
+  padding-bottom: 0.7rem;
+  padding-left: 0.6rem;
+
+  color: var(--clr-txt-dark-grayish-blue);
+  font-size: 0.78rem;
+  font-weight: var(--fw-standard);
+  width: 91%;
+}
+
+.img-container {
+  height: 100%;
+  display: inline-block;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
