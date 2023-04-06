@@ -36,6 +36,7 @@
   font-size: 0.78rem;
   font-weight: var(--fw-standard);
   width: 91%;
+  word-wrap: break-word;
 }
 
 .img-container {
